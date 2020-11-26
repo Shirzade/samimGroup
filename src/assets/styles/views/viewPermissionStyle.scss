@@ -1,0 +1,12 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#permissions {
+  direction: rtl;
+  @include margin(0px, auto, auto, 150px);
+  .caption-style {
+    @include margin(20px, auto, auto, 20px);
+    @include font-style($color-black, 14px, 20px, normal);
+  }
+}

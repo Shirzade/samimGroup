@@ -1,0 +1,118 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#app-footer {
+  * {
+    font-family: IRANSans;
+    @include textAlign(right);
+  }
+
+  background: $color-footer;
+  width: 100%;
+
+  .footer-text {
+    @include font-style($color-footer-text, 12px, 20px, normal);
+    @include textAlign(justify);
+    direction: rtl;
+
+    a {
+      text-decoration: none;
+      color: $color-footer-text;
+    }
+
+    img {
+      @include margin(5px, 5px, 5px, 5px)
+    }
+  }
+
+  .logo-img {
+    @include margin(50px, auto, 0, 21px)
+  }
+
+  .social-media-link {
+    float: right;
+    @include margin(21px, 0px, 0px, auto)
+  }
+
+  .social-media-linkden {
+    float: right;
+    @include margin(21px, 3px, 0px, auto)
+  }
+
+  .top-to-page-icon {
+    width: 0;
+    height: 0;
+    border: 32px solid transparent;
+    border-bottom-color: #707070;
+    position: relative;
+    top: -65px;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+  .top-to-page-icon:after {
+    content: '';
+    position: absolute;
+    left: -32px;
+    top: 32px;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border: 32px solid transparent;
+    border-top-color: #707070;
+  }
+
+  .top-to-page-icon-small {
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-bottom-color: #707070;
+    position: relative;
+    top: -40px;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+  .top-to-page-icon-small:after {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 25px;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border: 25px solid transparent;
+    border-top-color: #707070;
+  }
+
+  .to-top-page {
+    @include textAlign(-webkit-right);
+    @include textAlign(-moz-right);
+    @include padding(0px, 70px, 0px, 0px);
+    @include margin(0px, 0px, 0px, 0px);
+
+    img {
+      @include margin(14px, 0px, -12px, 0px)
+    }
+  }
+
+  .small-to-top-page {
+    @include textAlign(-webkit-center);
+    @include textAlign(-moz-center);
+    @include margin(0px, 0px, 0px, 0px);
+
+    img {
+      @include margin(11px, 0px, -12px, 0px)
+    }
+  }
+
+  p {
+    @include textAlign(justify);
+    @include font-style($color-footer-text, 13px, 23px, normal);
+    direction: rtl;
+  }
+  .footer-border{
+    @include border-type(0px, 0px, 0px, 1px, $color-gray-level-g, solid);
+  }
+}

@@ -1,0 +1,10 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+
+#checkBox-style {
+  width: 100%;
+  @include padding(5px, 0px, 0px, 0px);
+  @include font-style($color-all-button, 16px, 15px, normal)
+}

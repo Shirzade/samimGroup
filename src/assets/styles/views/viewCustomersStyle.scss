@@ -1,0 +1,9 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#customers {
+  @include padding(0px,20px,20px,150px);
+  direction: rtl;
+  @include margin(0px, auto, auto, 150px);
+}

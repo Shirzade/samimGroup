@@ -1,0 +1,34 @@
+@import "../colors";
+@import "../mixins";
+
+#item-blog-other-news-link{
+    .card-body{
+        @include padding(0px, 0px, 0px, 0px);
+        @include margin(10px, 0px, 0px, 5px);
+        .card-title{
+            @include font-style($color-gray, 15px, 22px, normal);
+            @include margin(10px, 0px, 0px, 15px);
+        }
+        a{
+            @include font-style($color-red-text, 14px, 45px, normal);
+            &:hover{
+                color: $color-dark-red-text;
+                text-decoration: none;
+            }
+            span{
+                @include margin(10px, 5px, 0px, 0px);
+            }
+        }
+        .container-date{
+            @include font-style($color-gray, 14px, 20px, normal);
+            @include margin(0px, 0px, -20px, 10px);
+            @include border-type(0px, 0px, 0px, 1px, $color-light-border, solid);
+            padding-bottom: 10px;
+            color: $color-gray-level-8;
+        }
+        img {
+            @include textAlign(center)
+        }
+
+    }
+}

@@ -1,0 +1,9 @@
+@import "../mixins";
+
+#item-big-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include margin(60px, auto, auto, 60px);
+  @include padding(0px, 15px, 15px,0px)
+}

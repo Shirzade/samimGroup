@@ -1,0 +1,19 @@
+@import "../colors";
+@import "../mixins";
+
+.card-box-1 {
+    @include font-style($color-black-2, 16px, 19px, normal);
+    @include padding(12px, 12px, 12px, 12px);
+    .card-box-2 {
+        @include margin(40px, 0px, 0px, 20px);
+        @include padding(0px, 0px, 10px, 0px);
+        img{
+            @include margin(5px, 5px, 5px, 5px);
+            @include border(1px, double, $color-light-border, 4px);
+            }
+        p{
+            @include font-style($color-black-2, 16px, 19px, normal);
+            @include padding(15px, 0px, 0px, 0px);
+        }
+    }
+}

@@ -1,0 +1,112 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#app-tabs {
+
+
+  @include padding(25px, 0px, 0px, 20px);
+
+  .container-products {
+    justify-content: center;
+    @include border-type(0px, 0px, 0px, 1px, $color-gray-level-c, solid)
+  }
+
+  .sub-container-products {
+    justify-content: center;
+  }
+
+  .button-tab {
+    @include padding(0px, 0px, 0px, 0px);
+    @include font-style($color-black, 1.12em, 15px, normal);
+    cursor: pointer;
+  }
+
+  .active {
+    @include font-style($color-black-select, 1.12em, 15px, normal);
+    @include border-type(0px, 0px, 0px, 3px, #E32618, solid);
+  }
+
+  .mouse-hover-in-in-ctive {
+    display: none;
+  }
+
+  .mouse-hover-active {
+    display: block;
+  }
+
+  .show-display {
+    display: block;
+  }
+
+  .hide-display {
+    display: none;
+  }
+
+  .blog-title-line {
+    @include margin(0px, auto, 0px, 10px);
+    @include border-type(0px, 0px, 0px, 6px, $color-top-projects-section, solid)
+  }
+
+  .container-tags {
+    @include margin(20px, 0px, 0px, 0px);
+    height: 400px;
+    overflow-y: scroll;
+    scrollbar-color: #ddd White;
+    scrollbar-width: thin;
+  }
+
+  .container-pagination {
+    @include margin(30px, 0px, 0px, 0px);
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-blog {
+    direction: rtl;
+  }
+
+  .container-tags::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .container-tags::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.20);
+    border-radius: 3px;
+  }
+
+  .container-tags::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.20);
+  }
+
+  .container-tabs {
+    background-color: #686A6C;
+    @include padding(0px, 60px, 0px, 0px)
+  }
+}
+#app-tab-iptv-solution-page{
+  font-family: IRANSans;
+  font-size: large;
+  .text-content{
+    p{
+      @include font-style($color-gray, 17px, 35px, normal);
+      text-align: justify;
+      float:left;
+
+    }
+  }
+}
+#app-tab-types-iptv-solution-page{
+  font-family: IRANSans;
+  font-size: large;
+  .text-content{
+    p{
+      @include font-style($color-gray, 17px, 35px, normal);
+      text-align: justify;
+      float:right;
+    }
+  }
+}
+
+

@@ -1,0 +1,12 @@
+@import "../colors";
+@import "../mixins";
+
+
+#app-paragraph {
+  p {
+    @include font-style($color-gray-text, 18px, 35px, normal);
+    @include textAlign(justify);
+    direction: rtl;
+    @include margin(0px, 0px, 0px, 20px)
+  }
+}

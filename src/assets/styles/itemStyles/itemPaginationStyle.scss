@@ -1,0 +1,38 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#item-pagination {
+
+
+
+  * {
+    font-family: IRANSans;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .dis-inline {
+    display: inline;
+  }
+
+  .link-page {
+    background: $color-white;
+    color: $color-bg-menu;
+    cursor: pointer;
+    display: inline;
+    @include padding(0px, 7px, 7px, 0px);
+    @include margin(0px, 7px, 20px, 0px);
+  }
+
+  .link-page-select {
+    display: inline;
+    background: $color-bg-pagination;
+    color: white;
+    cursor: pointer;
+    @include padding(0px, 8px, 6px, 0px);
+    @include margin(0px, 7px, 20px, 0px);
+  }
+}

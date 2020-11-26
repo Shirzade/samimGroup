@@ -1,0 +1,184 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#app-title {
+  font-family: IRANSans;
+  width: 100%;
+
+  .small-title {
+    @include font-style($color-footer-text, 13px, 21px, normal);
+    @include textAlign(right);
+    direction: ltr;
+  }
+
+  .very-small-title {
+    @include font-style($color-footer-text, 10px, 14px, normal);
+    text-align: left;
+    font-family: roboto;
+  }
+
+  .small-title-red {
+    @include font-style($color-selected-li, 15px, 20px, normal);
+    @include margin(5px, auto, 0, 0);
+    @include textAlign(right)
+  }
+
+  .top-project-title {
+    @include font-style($color-black, 23px, 35px, normal);
+    @include padding(0px, 0px, 24px, 25px);
+    @include textAlign(center)
+  }
+
+  .top-project-title-small {
+    @include font-style($color-black, 20px, 35px, normal);
+    @include padding(15px, 0px, 24px, 25px);
+    @include textAlign(center)
+  }
+
+  .item-our-solution {
+    @include font-style($color-bg-menu, 20px, 30px, bold)
+  }
+
+  .item-small-top-projects-title {
+    @include font-style($color-white, 25px, 30px, normal);
+    @include textAlign(right);
+    @include margin(10px, 0px, 0px, 0px);
+  }
+
+  .first-title-small-customer {
+    @include font-style($color-white, 20px, 30px, bold)
+  }
+
+  .second-title-small-customer {
+    @include font-style($color-white, 18px, 25px, normal)
+  }
+
+  .item-small-title-slider {
+    @include font-style($color-bg-menu, 30px, 30px, bold)
+  }
+
+  .item-top-project-title {
+    @include font-style($color-white, 28px, 15px, normal);
+    @include margin(20px, 0px, 0px, 0px)
+  }
+
+  .item-top-project-title-two-section {
+    @include font-style($color-white, 28px, 15px, normal);
+    @include margin(20px, 0px, 22px, 0px)
+  }
+
+  .item-top-project-title-two-section-right {
+    @include font-style($color-white, 28px, 15px, normal);
+    @include margin(20px, 12px, 22px, 0px)
+  }
+
+  .overlay-style {
+    @include font-style($color-white, 18px, 28px, bold)
+  }
+
+  .overlay-style-small {
+    @include font-style($color-white, 13px, 28px, normal)
+  }
+
+  .title-sub-menu {
+    @include font-style($color-white, 18px, 35px, normal);
+    @include margin(15px, 10px, 0px, 0px);
+    @include textAlign(right);
+    font-family: Roboto;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .text-sub-menu {
+    @include font-style($color-white, 12px, 15px, normal);
+    @include margin(-5px, 10px, 0px, 10px);
+    @include textAlign(right);
+    font-family: Roboto;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+
+  .related-item {
+    @include textAlign(right);
+    @include font-style($color-black, 18px, 30px, bold);
+    text-align: right;
+  }
+
+  .sub-title-products {
+    @include textAlign(right);
+    @include font-style($color-gray, 22px, 30px, normal)
+  }
+
+  .login-page-title {
+    @include font-style($color-black, 18px, 25px, bold)
+  }
+
+  .title-blog {
+    @include font-style($color-black, 14px, 25px, bold);
+    @include textAlign(right);
+  }
+
+  .title-contact-us {
+    @include textAlign(right);
+    @include font-style($color-black, 15px, 20px, normal)
+  }
+
+  .contact-us-title {
+    @include font-style($color-black, 16px, 35px, bold);
+    @include textAlign(right);
+  }
+
+  .solutions-sub-title-in-texts {
+    @include font-style($color-black-2, 22px, 45px, normal);
+    @include textAlign(right);
+    @include padding (44px, 0px, 0px, 22px)
+  }
+
+  .ip-gateway-products-tab-titles {
+    @include font-style($color-black-2, 22px, 45px, normal);
+    @include textAlign(right);
+  }
+
+  .single-blog-title {
+    @include font-style($color-black-2, 25px, 30px, bold);
+    @include textAlign(right);
+    @include margin (20px, 0px, 0px, 20px);
+  }
+
+  .single-blog-sub-title {
+    @include font-style($color-gray, 20px, 30px, normal);
+    @include textAlign(right);
+    @include margin (10px, 0px, 0px, 30px);
+  }
+
+  .title-other-news-section-in-single-blog {
+    @include font-style($color-black, 14px, 0px, bold);
+    @include textAlign(right);
+  }
+
+  .small-title-address {
+    @include font-style($color-black-2, 13px, 21px, normal);
+    @include textAlign(right);
+    direction: ltr;
+  }
+
+  .title-result-search {
+    @include margin(30px, 25px, 0px, 30px);
+    @include font-style($color-black-2, 18px, 30px, bold)
+  }
+
+  .item-small-title-slider {
+    @include margin(20px, 0px, 0px, 0px)
+  }
+
+  .resources-part-title{
+    text-align: right;
+    @include margin(50px, 0px, auto, 30px);
+  }
+  .resrc-title{
+    @include margin(0px, 30px, auto,0px);
+  }
+}

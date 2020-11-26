@@ -1,0 +1,26 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+#resources {
+  font-family: IRANSans;
+  font-size: 17px;
+  
+  @include padding(100px, 0px, 0px, 100px);
+
+
+  @include margin(0px, auto, auto, 150px);
+
+  .container-img-table {
+    width: 150px;
+  }
+
+  th, td {
+    text-align: center;
+    vertical-align: middle;
+    direction: rtl;
+  }
+
+  .catalog-table {
+    @include border(2px, solid, $color-all-button, 0px)
+  }
+}

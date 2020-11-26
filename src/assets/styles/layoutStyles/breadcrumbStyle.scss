@@ -1,0 +1,28 @@
+@import "../colors";
+@import "../mixins";
+
+#app-breadcrumb {
+    width: 100%;
+    float: right;
+    direction: rtl;
+    ol{
+        float:right;
+        background: none;
+        @include padding(10px, 0px, 0px, 20px);
+        span{
+            @include font-style($color-black-2, 13px, 19px, normal);
+
+        }
+        a {
+            text-decoration: none;
+            @include font-style($color-gray, 13px, 19px, normal);
+        }
+        .breadcrumb-item::before{
+            font-size: small;
+            padding-right: 5px;
+        }
+        .breadcrumb-item + .breadcrumb-item {
+            padding-left: 0;      
+        }
+    }
+}

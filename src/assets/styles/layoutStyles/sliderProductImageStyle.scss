@@ -1,0 +1,50 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#container-image-slider {
+
+  .container-loading {
+    @include textAlign(center);
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    align-items: center;
+    position: absolute;
+  }
+
+
+  .not-show-image {
+    visibility: hidden;
+  }
+
+  .show-image {
+    visibility: visible;
+  }
+
+  @include padding(60px, 0px, 0px, 0px);
+
+  .openerp .img-thumbnail > img {
+    height: 466px;
+    width: 876px;
+  }
+
+  .container-image-thumbnail {
+    @include margin(10px, -18px, auto, 0px);
+    float: right;
+    direction: rtl;
+
+    img {
+      width: 140px;
+      height: 80px;
+      cursor: pointer;
+      @include margin(3px, 2px, 9px, 10px);
+      @include border (1px, solid, #dee2e6, 2px);
+    }
+
+
+    .active {
+      // @include border(1px, solid, $color-line-separated, 2px)
+    }
+  }
+}

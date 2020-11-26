@@ -1,0 +1,31 @@
+@import "../colors";
+@import "../mixins";
+
+#app-page-main-title{
+    h1{
+        .title-en{
+            @include font-style-black-en($color-black-2, 45px,100px, bolder);
+            @include textAlign(right);
+        }
+
+        .product-title-en{
+            @include font-style-black-en($color-black-2, 55px,100px, bolder);
+            @include textAlign(right);
+            @include margin(30px,0px, 10px, 0px);
+        }
+    }
+    .main-title-page {
+        @include textAlign(right);
+        @include font-style($color-black-2, 30px,80px, 1000);
+    }
+    .title-fa{
+        @include font-style($color-black-2, 40px,80px, 1000);
+        @include textAlign(right);
+    }
+    .product-page-main-title{
+        @include font-style($color-black-2, 30px,54px, bolder);
+        @include textAlign(right);
+        @include margin(30px,0px, 10px, 55px);
+    }
+
+}

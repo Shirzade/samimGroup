@@ -1,0 +1,30 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#single-product {
+  * {
+    font-family: IRANSans;
+  }
+  
+  #test {
+    background-color: red;
+  }
+  .container{
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  .manual-section {
+    direction: ltr;
+    h3 {
+      @include textAlign(right)
+    }
+    @include textAlign(right)
+  }
+
+  .container-related {
+    @include padding(15px, 0px, 0px, 15px);
+    background: $color-gray-level-d;
+  }
+}

@@ -1,0 +1,9 @@
+@import "../colors";
+@import "../mixins";
+
+
+#title-footer {
+    @include font-style($color-black, 17px, 1.6, normal);
+    @include textAlign(right);
+    @include margin(53px, auto, 0, 18px);
+  }

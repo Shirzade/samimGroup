@@ -1,0 +1,48 @@
+@import "../mixins";
+@import "../colors";
+@import "../variables";
+
+
+#top-projects {
+  // system monitoring
+  .container-content {
+    @include margin(0px, 0px, 0px, 200px)
+  }
+
+  .title-banner-system-monitoring {
+    @include background-image('~@/assets/img/pages/top-product/monitoring-system/banner.jpg', no-repeat, center, cover, 330px);
+  }
+
+
+  // bazar mohtava
+  .title-banner-bazar-mohtava {
+    @include background-image('~@/assets/img/pages/top-product/bazar-mohtava/banner.jpg', no-repeat, center, cover, 330px);
+  }
+
+
+  // head monitoring
+  .title-banner-head-monitoring {
+    @include background-image('~@/assets/img/pages/top-product/head-monitoring/banner.jpg', no-repeat, center, cover, 330px);
+  }
+
+  // smart system
+  .title-banner-smart-system {
+    @include background-image('~@/assets/img/pages/top-product/smart-system/banner.jpg', no-repeat, center, cover, 330px);
+  }
+
+
+  .main-features-scm{
+    background: $color-main-features-section;
+    @include margin(100px, 0px, 0px, 100px);
+    img{
+      float: left;
+      @include margin(70px, 0px, 0px, 30px);
+    }
+    ul {
+      @include margin(50px, 0px, 0px, 120px);
+      list-style: none;
+      list-style-position: outside;
+      @include padding(0px, 50px, 0px, 0px);
+    }
+  }
+}

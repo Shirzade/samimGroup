@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'IRANSans';
+  src: local('IRANSans'),
+  url('~@/assets/fonts/woff2/IRANSansWeb(FaNum).woff2') format('woff2'),
+  url('~@/assets/fonts/woff/IRANSansWeb(FaNum).woff') format('woff'),
+  url('~@/assets/fonts/ttf/IRANSansWeb(FaNum).ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Roboto-black';
+  src: local('Roboto-black'),
+  url('~@/assets/fonts/ttf/Roboto-Black_2.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'),
+  url('~@/assets/fonts/ttf/Roboto-Regular_2.ttf') format('truetype');
+  font-style: normal;
+}

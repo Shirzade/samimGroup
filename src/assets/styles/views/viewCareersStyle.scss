@@ -1,0 +1,32 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#careers {
+  @include padding(0px, 20px, 20px, 150px);
+  direction: rtl;
+
+  * {
+    font-family: IRANSans;
+  }
+
+  ul {
+    @include textAlign(right);
+    direction: rtl;
+    @include padding(5px, 30px, 0px, 5px);
+
+    li {
+      @include font-style($color-black, 15px, 25px, bold);
+      @include margin(5px, 0px, 0px, 5px)
+    }
+  }
+
+  .container-skills {
+    @include textAlign(right)
+  }
+
+  .container-items {
+    @include padding(5px, 0px, 0px, 5px);
+  }
+}
+

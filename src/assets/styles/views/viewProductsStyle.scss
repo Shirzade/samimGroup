@@ -1,0 +1,40 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#products {
+  direction: rtl;
+
+  .title-banner {
+    @include background-image('~@/assets/img/pages/products/banner.jpg', no-repeat, right, cover, 250px);
+  }
+  .title-banner-small {
+    @include background-image('~@/assets/img/pages/products/banner.jpg', no-repeat, right, cover, 90px);
+  }
+  #app-breadcrumb{
+    margin-top: 20px;
+  }
+  .side-bar {
+    background: $color-gray-level-d;
+    @include margin(40px, 0px, 0px, 20px);
+    @include padding(25px, 15px, 15px, 25px);
+    @include border-raduis(3px,20px,3px,3px);
+    // #app-collapse{
+    //   border-top: #e8e8e8  solid 1px;
+    // }
+    
+  }
+  .side-bar-tags {
+    background: $color-gray-level-d;
+    @include margin(20px, 0px, 0px, 0px);
+    @include padding(15px, 0px, 15px, 15px);
+    @include border-raduis(3px,3px,3px,10px);
+    @include textAlign(right)
+  }
+
+  .container-pagination {
+    @include margin(50px, 0px, 0px, 80px);
+    display: flex;
+    justify-content: center;
+  }
+}

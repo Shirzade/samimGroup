@@ -1,0 +1,13 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+
+#app-main-title {
+  @include margin(30px, 0px, 0px,30px);
+  font-family: IRANSans;
+
+  h2 {
+    font-weight: bold;
+  }
+}

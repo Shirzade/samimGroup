@@ -1,0 +1,16 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#job-form {
+  * {
+    font-family: IRANSans;
+  }
+
+  @include textAlign(right);
+  direction: rtl;
+
+  .container-button {
+    @include textAlign(center)
+  }
+}

@@ -1,0 +1,53 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#item-product-page {
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  @include margin(10px, 0px, 0px, 25px);
+  cursor: pointer;
+
+  .container-item-product {
+    @include border(1px, solid, $color-gray-level-e, 0px);
+    @include textAlign(right);
+    height: 350px;
+    background: $color-gray-level-4;
+  }
+
+  .item-product-title {
+    @include padding(0px, 10px, 10px, 0px);
+    @include font-style-en-without-di(inherit, 1.5rem, 1.2, 500);
+  }
+
+  .item-product-text {
+    @include padding(0px, 10px, 10px, 0px);
+    font-family: IRANsans;
+  }
+
+  .container-item-product-hover {
+    // @include border(1px, solid, red, 0px);
+    border: solid 1px rgba(255, 0, 0, 0.40);
+    -webkit-box-shadow: 0 3px 6px 0 rgba(255, 0, 0, 0.22);
+    box-shadow: 0 3px 6px 0 rgba(255, 0, 0, 0.22);
+    height: 350px;
+    @include textAlign(right);
+    background: $color-gray-select;
+  }
+
+  .container-more-button {
+    @include padding(15px, 10px, 10px, 15px);
+    @include textAlign(right);
+
+    img {
+      cursor: pointer;
+    }
+  }
+}

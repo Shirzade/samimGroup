@@ -1,0 +1,13 @@
+@import "../colors";
+@import "../mixins";
+
+
+#item-link-footer {
+  @include textAlign(right);
+  @include margin(6px,0px,0px,6px);
+  a {
+    @include margin(30px, auto, 0, 30px);
+    text-decoration: none;
+    @include font-style($color-footer-text, 13px, 20px, normal)
+  }
+}

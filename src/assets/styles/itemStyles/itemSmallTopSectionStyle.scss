@@ -1,0 +1,11 @@
+@import "../colors";
+@import "../mixins";
+
+
+#item-small-top-projects {
+  @include padding(25px, 25px, 25px, 25px);
+
+  img {
+    width: 50px;
+  }
+}

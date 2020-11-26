@@ -1,0 +1,43 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#app-collapse {
+  * {
+    font-family: IRANSans;
+  }
+  .btn-products-page{
+    margin-top: 0px;
+    font-weight: bold;
+    @include padding(15px, 0px, auto ,5px);
+    &:hover{
+      color:$color-selected-li;
+    }
+  }
+  .title-button {
+    @include textAlign(right);
+  }
+
+  .image-button {
+    float: left;
+  }
+
+  .footer-small {
+    background: $color-white-level-0;
+  }
+
+  .products-page {
+    background: $color-white-level-0;
+    .card-body{
+      @include padding(0px, 0px, auto, 0px);
+      // padding-top: 0px;
+      // padding-right: 0;
+      // padding-bottom: 0px;
+      margin-right:-15px;
+      color: gray;
+    }
+  }
+  .menu-small {
+    background: $color-white-level-0;
+  }
+}

@@ -1,0 +1,279 @@
+@import "../mixins";
+@import "../colors";
+@import "../variables";
+
+#solutions {
+  direction: rtl;
+  .wrapper{
+    @include margin(50px, auto, auto, 150px);
+  }
+  .font-roboto{
+    font-family: roboto;
+  }
+  //iMAM
+  .title-banner-imam {
+    @include background-image('~@/assets/img/pages/solutions/imam/banner.jpg', no-repeat, center, cover, 330px);
+  }
+  .main-features-imam{
+    background: $color-main-features-section;
+    @include margin(70px, 0px, 0px, 0px);
+    @include padding(115px, 0px, 0px, 145px);
+    img{
+      @include margin(10px, 0px, 0px, 20px);
+    }
+  }
+  .imam-icons, .bitcaster-icons, .ipgateway-icons{
+    @include margin(80px, 0px, 0px, 30px);
+    .card-group{
+      @include padding(80px, 0px, 0px, 90px);
+      .card{
+        background:none;
+        justify-content: center;
+        align-items: center;
+        @include padding(0px, 20px, 20px, 0px);
+        img{
+          @include padding(0px, 10px, 10px, 0px);
+          max-width: 120px;
+        }
+        .card-body{
+          @include padding(0px, 0px, 0px, 0px);
+          .card-title{
+            @include margin(30px, 0px, 0px, 10px);
+            @include font-style($color-black-2, 19px, 32px, normal);
+          }
+        }
+      }
+    }
+  }
+  .imam-icons{
+    background: $color-main-features-section;
+  }
+  //SamrtCast Manager
+  .title-banner-smartcastmanager {
+    @include background-image('~@/assets/img/pages/solutions/smartcastmanager/smartcast-manager-banner.jpg', no-repeat, center, cover, 330px);
+  }
+  .main-features-scm{
+    background: $color-main-features-section;
+    @include margin(100px, 0px, 0px, 0px);
+    img{
+      float: left;
+      @include margin(70px, 0px, 0px, 30px);
+    }
+    ul {
+      @include margin(50px, 0px, 0px, 120px);
+      list-style: none;
+      list-style-position: outside;
+      @include padding(0px, 50px, 0px, 0px);
+    }
+  }
+  .scm-views{
+    @include margin(70px, 0px, 0px, 60px);
+    border: none;
+    .card{
+      @include padding(0px, 10px, 10px, 0px);
+        img{
+          @include padding(0px, 10px, 10px, 0px);
+          max-width: 450px;
+          min-width: 265px;
+      }
+      .card-title{
+        @include font-style($color-black-2, 20px, 32px, normal);
+      }
+      .card-text{
+        @include font-style($color-gray, 18px, 32px, normal);
+      }
+    }
+  }
+  .scm-deployment-graphs{
+    @include margin(70px, 0px, 0px, 60px);
+    border: none;
+    .card{
+      @include padding(0px, 30px, 30px, 0px);
+        img{
+          @include padding(0px, 10px, 10px, 0px);
+          max-width: 600px;
+      }
+      .card-title{
+        @include font-style($color-black-2, 20px, 32px, normal);
+      }
+      .card-text{
+        @include font-style($color-black-2, 20px, 32px, normal);
+      }
+    }
+  }
+  .scm-deployment-graghs{
+    .card{
+      img{
+        @include padding(0px, 90px, 90px, 0px);
+      }
+      .card-text{
+        @include font-style($color-black-2, 20px, 32px, normal);
+      }
+    }
+  }
+  .scm-icons{
+    background: $color-main-features-section;
+    @include margin(100px, 0px, 0px, 0px);
+    .card-group{
+      @include padding(70px, 0px, 0px, 60px);
+      .card{
+        background:none;
+        justify-content: center;
+        align-items: center;
+        @include padding(0px, 30px, 30px, 0px);
+        img{
+          @include padding(0px, 10px, 10px, 0px);
+          max-width: 130px;
+        }
+        .card-body{
+          @include padding(0px, 0px, 0px, 0px);
+          .card-title{
+            @include margin(30px, 0px, 0px, 10px);
+            @include padding(0px, 30px, 30px, 0px);
+            @include font-style($color-black-2, 20px, 32px, normal);
+          }
+        }
+      }
+    }
+  }
+  .scm-security{
+    ul{
+      @include margin(70px, 0px, 0px, 60px);
+    }
+  }
+  //IP Gateway
+  .title-banner-ipgateway {
+    @include background-image('~@/assets/img/pages/solutions/ipgateway/ip-gateway-banner.jpg', no-repeat, center, cover, 330px);
+  }
+  .main-features-ipgateway{
+    background: $color-main-features-section;
+    @include margin(70px, 0px, 0px, 0px);
+    #app-title{
+      @include padding(30px, 0px, 0px, 30px);
+    }
+    .ipgateway-icons{
+      @include margin(0px, 0px, 0px, 0px);
+    }
+  }
+  .sdi-to-ip{
+    #app-title{
+      @include margin(80px, 0px, 0px, 60px);
+    }
+  }
+  .ipgateway-stodio{
+    background: $color-main-features-section;
+    @include padding(70px, 0, 0, 50px);
+    #app-title{
+      text-align: center;
+    }
+  }
+//BitCaster
+  .title-banner-bitcaster {
+    @include background-image('~@/assets/img/pages/solutions/bitcaster/bitcaster-banner.jpg', no-repeat, center, cover, 330px);
+  }
+  .main-features-bitcaster{
+    background: $color-main-features-section;
+    @include margin(100px, 0px, 0px, 0px);
+    ul {
+      list-style: none;
+      list-style-position: outside;
+      @include padding(0px, 50px, 0px, 0px);
+
+    }
+    .bitcaster-features-ul{
+      @include margin(-20px, 0px, 0px, 0px);
+      list-style: none;
+      list-style-position: outside;
+    }
+    p{
+      @include font-style($color-gray, 18px, 40px, normal);
+      @include margin(-20px, 33px, 0px, 30px);
+      text-align: justify;
+    }
+  }
+  .bitcaster-req{
+    background: $color-main-features-section;
+  }
+  #specification-accordion{
+    margin-bottom: 64px;
+    .btn{
+      @include font-style(white, 18px, 40px, normal);
+      background-color:#17a2b8;
+      border-color:#17a2b8;
+      &:hover{
+        background-color:#138496;
+        border-color:#117a8b;
+      }
+    }
+    .card-body{
+      @include padding(0px, 0px, 0px, 0px);
+    }
+  }
+  .specification-tbl, .requairement-tbl{
+    th{
+      padding: 15px;
+      background-color: #ffffff;
+      border: 1px solid #cccfd2;
+      vertical-align: middle;
+    }
+    td {
+      padding: 10px;
+      vertical-align: middle;
+      border: 1px solid #cccfd2;
+      background-color: white;
+      vertical-align: middle;
+    }
+    ul{
+      @include padding (0px, 13px, 0px, 0px);
+    }
+    @include font-style($color-black-2, 14px, 30px, normal);
+  }
+  .specification-tbl{
+    text-align: right;
+    margin-bottom: 0px;
+  }
+  .requairement-tbl{
+    @include margin(30px, 0px, 0px, 150px);
+  }
+  //IPTV
+  .title-banner-iptv {
+    @include background-image('~@/assets/img/pages/solutions/iptv/iptv-banner.jpg', no-repeat, center, cover, 330px);
+  }
+  .iptv-facilities-section{
+    background: $color-main-features-section;
+    .nav-item{
+      background-color: transparent;
+    }
+    #app-title{
+      @include padding(30px, 0px, 0px, 30px);
+    }
+    .ipgateway-icons{
+      @include margin(0px, 0px, 0px, 0px);
+    }
+  }
+  // .features{
+  //   @include margin(0px, 0px, 0px, 0px)
+  // }
+  .features-img{
+    z-index: 100;
+    margin-bottom: -350px;
+  }
+  .iptv-security-section{
+    background: $color-main-features-section;
+    @include padding(200px, 0px, 0px, 100px);
+  }
+  // .sdi-to-ip{
+  //   #app-title{
+  //     @include margin(80px, 0px, 0px, 60px);
+  //   }
+  // }
+  // .ipgateway-stodio{
+  //   background: $color-main-features-section;
+  //   @include padding(70px, 0, 0, 50px);
+  //   #app-title{
+  //     text-align: center;
+  //   }
+  // }
+
+
+}

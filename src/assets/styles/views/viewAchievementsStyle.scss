@@ -1,0 +1,14 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#achievements {
+  direction: rtl;
+  @include padding(0px, 20px, 20px, 0px);
+  @include margin(0px, auto, auto, 100px);
+
+  .caption-style {
+    @include margin(20px, auto, auto, 20px);
+    @include font-style($color-black, 14px, 20px, normal);
+  }
+}

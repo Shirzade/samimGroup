@@ -1,0 +1,12 @@
+@import "../colors";
+@import "../mixins";
+
+
+#item-small-slider {
+  p {
+    @include font-style($color-bg-menu, 18px, 25px, bold);
+    @include margin(30px, 30px, 30px, 30px);
+    @include textAlign(justify);
+    direction: rtl;
+  }
+}

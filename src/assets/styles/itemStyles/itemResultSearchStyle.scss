@@ -1,0 +1,23 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#item-result-search {
+
+  * {
+    font-family: IRANSans;
+  }
+
+  .container-item-search {
+    @include margin(6px, 0px, 0px, 0px);
+    cursor: pointer;
+    @include textAlign(right);
+    background-color: #0606060a;
+    @include border(1px, solid, $color-bg-post, 1px)
+  }
+
+  img {
+    width: 130px;
+    @include margin(0px, 0px, 20px, 0px)
+  }
+}

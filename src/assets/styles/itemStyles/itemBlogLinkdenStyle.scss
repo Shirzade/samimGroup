@@ -1,0 +1,26 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#item-blog-linkden {
+  * {
+    font-family: IRANSans;
+  }
+
+
+  @include border-type(0px, 0px, 0px, 1px, $color-gray-level-e, solid);
+
+  .text-linkden {
+    direction: rtl;
+    @include textAlign(justify);
+    @include font-style($color-black, 11px, 19px, normal);
+    @include margin(0px, 0px, 0px, 0px)
+  }
+
+  .container-date {
+    @include textAlign(right);
+    @include font-style($color-light-border, 10px, 10px, normal);
+    @include margin(10px, 0px, 0px, 0px);
+    direction: rtl;
+  }
+}

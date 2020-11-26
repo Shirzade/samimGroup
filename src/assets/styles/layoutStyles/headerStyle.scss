@@ -1,0 +1,280 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+
+#app-header {
+  background: $color-bg-menu;
+
+  * {
+
+    font-family: IRANSans;
+    direction: rtl;
+  }
+
+  .change-language-section {
+    @include textAlign(right)
+  }
+
+  .brand-image-small {
+    width: 40px;
+    float: left;
+  }
+
+  .brand-image-medium {
+    width: 70px;
+    float: left;
+  }
+
+  .list-menu {
+    // @include border-type(0px, 0px, 0px, 1px, $color-divider-menu, solid);
+
+    li {
+      @include border-type(0px, 0px, 0px, 3px, $color-bg-menu, solid);
+      @include padding(0px, 5px, 5px, 10px);
+      @include font-style($color-white, 18px, 18px, normal);
+
+      a {
+        @include font-style($color-white, 18px, 18px, normal);
+
+        span {
+          @include font-style($color-white, 18px, 18px, normal);
+        }
+      }
+
+      ul {
+        background: white;
+      }
+    }
+
+    li:hover {
+      @include border-type(0px, 0px, 0px, 3px, $color-selected-li, solid);
+    }
+
+    li:last-child:hover {
+      @include border-type(0px, 0px, 0px, 3px, $color-bg-menu, solid);
+    }
+
+    li:last-child {
+      @include padding(0px, 10px, 120px, 10px);
+    }
+
+    .sub-menu {
+      li a {
+        color: white;
+      }
+    }
+
+  }
+
+  .small-container {
+    a {
+      color: $color-white;
+      font-size: 15px;
+    }
+    .container-bars {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      color: $color-white;
+      .container-menu-small{
+        margin: 0;
+      }
+    }
+    .navbar-brand{
+      margin-right: 0px;
+    }
+  }
+
+  .container-bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-white;
+  }
+
+  .container-search-small {
+    @include margin(0px, 10px, 25px, 0px);
+    // cursor: pointer;
+    @include font-style($color-white, 16px, 25px, normal)
+  }
+
+  .container-menu-small {
+    width: 20px;
+    @include margin(0px, 10px, 10px, 0px);
+    cursor: pointer;
+    @include font-style($color-white, 17px, 25px, normal);
+    position: absolute;
+    left: 16px;
+  }
+
+  .container-content-menu_small {
+    width: 105%;
+    @include padding(0px, 30px, 20px, 0px);
+    top: 94px;
+    background: $color-bg-menu-transrarent;
+    position: absolute;
+    z-index: 1200;
+
+    ul {
+      list-style: none;
+      color: $color-white;
+      @include textAlign(right)
+    }
+
+    li {
+      @include padding(10px, 10px, 10px, 0px);
+      @include border-type(0px, 0px, 0px, 1px, $color-gray-level-c-9-border, solid);
+      cursor: pointer;
+
+      div {
+        @include padding(0px, 0px, 0px, 7px);
+        color: $color-gray-level-c-9;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      div:hover {
+        @include border-type(0px, 0px, 0px, 2px, $color-selected-li, solid);
+        @include padding(0px, 0px, 0px, 5px);
+        color: $color-gray-level-c-9;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+  .container-menu-medium {
+    width: 20px;
+    @include margin(0px, 10px, 10px, 0px);
+    cursor: pointer;
+    @include font-style($color-white, 27px, 25px, normal)
+  }
+
+  .container-content-menu_medium {
+    width: 105%;
+    @include padding(0px, 50px, 40px, 0px);
+    top: 129px;
+    background: $color-bg-menu-transrarent;
+    position: absolute;
+    z-index: 1200;
+
+    ul {
+      list-style: none;
+      color: $color-white;
+      @include textAlign(right)
+    }
+
+    li {
+      @include padding(10px, 10px, 10px, 0px);
+      @include border-type(0px, 0px, 0px, 1px, $color-gray-level-c-9-border, solid);
+      cursor: pointer;
+
+      div {
+        @include padding(0px, 0px, 0px, 7px);
+        color: $color-gray-level-c-9;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      div:hover {
+        @include border-type(0px, 0px, 0px, 2px, $color-selected-li, solid);
+        @include padding(0px, 0px, 0px, 5px);
+        color: $color-gray-level-c-9;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .container-login-button {
+    // position: absolute;
+    top: 10px;
+    left: 13.2%;
+    z-index: 100000000000;
+  }
+
+  .container-list-menu {
+    @include margin(0px, 50px, 0px, 0px)
+  }
+
+  .svg-inline--fa{
+    vertical-align: middle;
+  }
+
+  .navbar {
+    @include padding(10px, 0px, 0px, 10px);
+
+    .navbar-brand {
+      cursor: pointer;
+        margin-right: 5px;
+        margin-left: 50px;
+    }
+
+    .svg-container {
+      padding-bottom: 20px;
+      width: 120px;
+      padding-top: 20px;
+    }
+  }
+  form{
+    height: 30px;
+    // margin-left: 25px;
+  }
+  input {
+    width: 30px;
+    height: 30px;
+    border:none;
+    background-image: url('~@/assets/img/icons/icon-search.png');
+    background-position: 10px 8px; 
+    background-repeat: no-repeat;
+    padding: 0px 20px 0px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  input:focus {
+    width: 150px;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background: $color-dark-gray;
+    background-image: url('~@/assets/img/icons/icon-search.png');
+    background-position: 10px 8px; 
+    background-repeat: no-repeat;
+    @include font-style($color-white, 16px, 25px, normal)
+  }
+
+  .container-search-log-out {
+    position: absolute;
+    left: 100px;
+  }
+  .container-search {
+    position: absolute;
+    left: 200px;
+    margin-top: 5px;
+  }
+  .container-profile-user {
+    background-color: #414548;
+    float: left;
+    position: absolute;
+    @include padding(5px, 20px, 20px, 5px);
+    left: 0;
+    top: 32px;
+  }
+  
+  .item-profile {
+    color: white;
+    cursor: pointer;
+    display: flex;
+    @include padding(5px, 0px, 0px, 5px);
+    align-items: center;
+  }
+
+  .container-name {
+    @include margin(0px, 0px, 25px, 0px)
+  }
+
+
+}

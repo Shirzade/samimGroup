@@ -1,0 +1,24 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#tag-container-selected {
+  color: $color-white;
+  @include textAlign(center);
+  cursor: pointer;
+  background-color: $color-gray-level-b;
+  @include padding(0px, 8px, 8px, 0px);
+  @include margin(4px, 0px, 10px, 1px);
+  @include border(1px, solid, $color-gray-level-b, 30px);
+  float: right;
+}
+
+#tag-container-unselected {
+  color: $color-all-button;
+  @include textAlign(center);
+  cursor: pointer;
+  @include padding(0px, 8px, 8px, 0px);
+  @include margin(4px, 0px, 10px, 1px);
+  @include border(1px, solid, $color-gray-level-b, 30px);
+  float: right;
+}

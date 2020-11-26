@@ -1,0 +1,57 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#authentication {
+
+
+  background-color: $color-top-projects-section;
+
+  .verification-box {
+    @include margin(50px, 0px, 0px, 50px);
+    @include padding(50px, 50px, 50px, 50px);
+    background-color: $color-white;
+  }
+
+  .container-input-password {
+    display: flex;
+    border: 1px solid #ddd;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .input-password {
+    width: 100%;
+    height: 35px;
+    padding: 5px;
+    border: 1px solid white;
+    background-color: white;
+  }
+
+  .input-icon {
+    width: 30px;
+    @include textAlign(center)
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    border: 1px solid white;
+    -webkit-text-fill-color: black;
+    -webkit-box-shadow: white;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  * {
+    font-family: IRANSans;
+  }
+
+  @include textAlign(right);
+}

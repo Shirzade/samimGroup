@@ -1,0 +1,22 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+
+#app-filter-product {
+  * {
+    font-family: IRANSans;
+  }
+  cursor: pointer;
+  @include textAlign(right);
+  margin-bottom: 10px;
+  .filter-select {
+    color: $color-selected-li;
+  }
+  .filter-unselect{
+    &:hover{
+      color:$color-selected-li;
+    }
+  }
+  
+}

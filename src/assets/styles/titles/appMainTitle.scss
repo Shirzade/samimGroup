@@ -1,0 +1,8 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#app-main-title {
+  @include margin(10px, 0px, 0px,10px);
+  font-family: IRANSans;
+}

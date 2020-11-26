@@ -1,0 +1,31 @@
+@import "../colors";
+@import "../mixins";
+#item-main-resource{
+    color:$color-gray-resource-text;
+    background-color: $color-gray-resource-bg;
+    text-align: right;
+    position: relative;
+    margin-top: 5px;
+    .card-body{
+        @include padding(15px, 15px, 15px, 15px)
+    }
+    .card-img{
+        box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.3); 
+        width: 124px;
+        height: 93px;
+    }
+    .main-resrc{
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        #app-title{
+            margin-right: 20px;
+        }
+        .resrc-link{
+            text-decoration: none;
+            color: $color-download-link;
+            padding-left: 30px;
+        }
+    }
+}

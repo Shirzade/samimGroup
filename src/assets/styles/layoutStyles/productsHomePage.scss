@@ -1,0 +1,24 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#products-home-small {
+  margin-bottom: 40px;
+
+  .title-products {
+    background: $color-bg-menu;
+    color: $color-white;
+    cursor: pointer;
+    direction: rtl;
+    @include padding(15px, 35px, 35px, 15px);
+    @include margin(0px, 0px, 0px, 3px);
+
+    div {
+      float: right;
+    }
+
+    img {
+      float: left;
+    }
+  }
+}

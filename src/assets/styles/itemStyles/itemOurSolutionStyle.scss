@@ -1,0 +1,114 @@
+@import "../colors";
+@import "../mixins";
+
+
+#item-our-solution {
+  .item-our-solution-1 {
+    @include background-image('~@/assets/img/solutions/ip-gateway.jpg', no-repeat, center, cover, 340px);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include padding(8px, 8px, 8px, 8px)
+  }
+
+
+  .item-our-solution-1-small {
+    @include background-image('~@/assets/img/solutions/ip-gateway.jpg', no-repeat, center, cover, 250px);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include padding(8px, 8px, 8px, 8px)
+  }
+
+  .item-our-solution-2 {
+    @include background-image('~@/assets/img/solutions/smartcast-manager.jpg', no-repeat, center, cover, 340px);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include padding(8px, 8px, 8px, 8px)
+  }
+
+  .item-our-solution-2-small {
+    @include background-image('~@/assets/img/solutions/smartcast-manager.jpg', no-repeat, center, cover, 250px);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include padding(8px, 8px, 8px, 8px)
+  }
+
+  .item-our-solution-3 {
+    @include background-image('~@/assets/img/solutions/bitcaster.jpg', no-repeat, center, cover, 340px);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include padding(8px, 8px, 8px, 8px)
+  }
+
+  .item-our-solution-3-small {
+    @include background-image('~@/assets/img/solutions/bitcaster.jpg', no-repeat, center, cover, 250px);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include padding(8px, 8px, 8px, 8px)
+  }
+
+  .item-our-solution-4 {
+    @include background-image('~@/assets/img/solutions/imam.jpg', no-repeat, center, cover, 340px);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include padding(8px, 8px, 8px, 8px)
+  }
+
+  .item-our-solution-4-small {
+    @include background-image('~@/assets/img/solutions/imam.jpg', no-repeat, center, cover, 250px);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include padding(8px, 8px, 8px, 8px)
+  }
+
+
+  .overlay-box {
+    width: 100%;
+    cursor: pointer;
+    position: absolute;
+    height: 100%;
+    background: $color-overlay;
+    display: flex;
+    flex-direction: column;
+
+    .title {
+      flex: 1;
+      justify-content: center;
+      display: flex;
+      align-items: flex-end
+    }
+
+    .text {
+      flex: 1;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+
+    .button {
+      flex: 1;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .overlay-box-none-display {
+    display: none;
+  }
+}

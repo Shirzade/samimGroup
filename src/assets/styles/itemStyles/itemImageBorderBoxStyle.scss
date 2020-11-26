@@ -1,0 +1,49 @@
+@import "../colors";
+@import "../mixins";
+
+.image-box-shadow-style{
+    img{
+        @include border(1px, solid, $color-light-border, 4px);
+        -webkit-box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.16);
+        box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.16);
+    }
+    p{
+        @include font-style($color-black-2, 14px, 19px, normal);
+    }
+}
+.customer-style{
+    @include margin(30px, 0px, 0px, 5px);
+    @include padding(0px, 25px, 25px, 0px);
+    .card-body{
+        padding-left: 1.25rem;
+        p{
+            @include margin(5px, -35px, -35px, 0px);
+        }
+    }
+}
+.permission-style, .achievement-style{
+    @include margin(0px, 0px, 0px, 0px);
+    @include padding(12px, 12px, 12px, 12px);
+    .card-body{
+        padding-left: 1.25rem;
+        p{
+            @include padding(25px, 0px, 0px, 0px);
+        }
+    }
+}
+
+    // @include font-style($color-black-2, 16px, 19px, normal);
+    // @include padding(12px, 12px, 12px, 12px);
+    // @include margin(40px, 0px, 0px, 20px);
+    //     img{
+    //         @include border(1px, solid, $color-light-border, 4px);
+    //         -webkit-box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.16);
+    //         box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.16);
+    //         }
+    //     p{
+    //         @include font-style($color-black-2, 16px, 19px, normal);
+    //         @include padding(25px, 0px, 0px, 0px);
+    //     }
+
+
+

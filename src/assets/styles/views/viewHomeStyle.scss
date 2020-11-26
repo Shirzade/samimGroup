@@ -1,0 +1,437 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#home {
+  * {
+    font-family: IRANSans;
+  }
+
+  .show-page {
+    visibility: visible;
+  }
+
+  .show-page-not {
+    visibility: hidden;
+  }
+
+  .container-slider {
+    width: 1818px;
+    height: 800px;
+  }
+
+
+
+
+
+  .move-to-bottom {
+    background: $color-black;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+
+    img {
+      @include margin(8px, 0px, -7px, 0px)
+    }
+  }
+
+  .bottom-to-page-icon {
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-bottom-color: $color-gray-level-c;
+    position: relative;
+    top: 0px;
+    cursor: pointer;
+    z-index: 10000;
+  }
+
+  .bottom-to-page-icon:after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 15px;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    z-index: -10000;
+    border: 15px solid transparent;
+    border-top-color: $color-gray-level-c;
+  }
+
+  // .sectionFirst {
+  //   @include background-image('~@/assets/img/ic_banner.png', no-repeat, center, cover, 80vh)
+  // }
+
+  .new-products-section {
+    @include margin(-20px, 0px, 0px, -60px);
+  }
+
+  .top-projects-section-small {
+    @include padding(30px, 0px, 0px, 0px);
+    background: $color-top-projects-section;
+    //height: 1875px;
+  }
+
+  .top-projects-section-medium {
+    background: $color-top-projects-section;
+
+    .top-projects-medium {
+      img {
+        width: 80px;
+      }
+
+      p {
+        @include textAlign(justify);
+        @include margin(20px, 0px, 0px, 0px);
+        @include font-style($color-font-small-text, 15px, 27px, normal);
+        direction: rtl;
+      }
+
+      .first-section {
+        @include background-image('~@/assets/img/img_bg_top_projetcs.jpg', no-repeat, right, cover, 205px);
+        @include padding(30px, 0px, 0px, 0px)
+      }
+
+      .second-section {
+        @include background-image('~@/assets/img/img_bg_top_projects_2.jpg', no-repeat, right, cover, 205px);
+        @include padding(30px, 0px, 0px, 0px)
+      }
+    }
+  }
+
+
+  .top-projects-section {
+    @include padding(30px, 0px, 0px, 50px);
+    background: $color-top-projects-section;
+  }
+
+  .top-projects-section-all-button {
+    background: $color-top-projects-section;
+    @include padding(40px, 0px, 0px, 40px)
+  }
+
+  .our-customers {
+    background: $color-top-projects-section;
+    @include padding(30px, 0px, 0px, 40px);
+
+    .nav-style {
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+    }
+
+    .container-large {
+      height: 340px;
+    }
+  }
+
+  .our-solution {
+    @include padding(30px, 0px, 0px, 40px);
+
+    .item-our-solution-1 {
+      @include background-image('~@/assets/img/solutions/ip-gateway.jpg', no-repeat, center, cover, 340px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include padding(8px, 8px, 8px, 8px)
+    }
+
+    .item-small-our-solution-1 {
+      @include background-image('~@/assets/img/solutions/ip-gateway.jpg', no-repeat, center, cover, 222px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include margin(5px, 0px, 0px, 0px);
+      @include padding(8px, 8px, 8px, 8px)
+    }
+
+    .item-our-solution-2 {
+      @include background-image('~@/assets/img/solutions/smartcast-manager.jpg', no-repeat, center, cover, 340px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include padding(8px, 8px, 8px, 8px)
+    }
+
+    .item-small-our-solution-2 {
+      @include background-image('~@/assets/img/solutions/smartcast-manager.jpg', no-repeat, center, cover, 222px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include margin(5px, 0px, 0px, 0px);
+      @include padding(8px, 8px, 8px, 8px)
+    }
+
+    .item-our-solution-3 {
+      @include background-image('~@/assets/img/solutions/bitcaster.jpg', no-repeat, center, cover, 340px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include padding(8px, 8px, 8px, 8px)
+    }
+
+    .item-small-our-solution-3 {
+      @include background-image('~@/assets/img/solutions/bitcaster.jpg', no-repeat, center, cover, 222px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include margin(5px, 0px, 0px, 0px);
+      @include padding(8px, 8px, 8px, 8px)
+    }
+
+    .item-our-solution-4 {
+      @include background-image('~@/assets/img/solutions/imam.jpg', no-repeat, center, cover, 340px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include padding(8px, 8px, 8px, 8px)
+    }
+
+    .item-small-our-solution-4 {
+      @include background-image('~@/assets/img/solutions/imam.jpg', no-repeat, center, cover, 222px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include margin(5px, 0px, 0px, 0px);
+      @include padding(8px, 8px, 8px, 8px)
+    }
+
+  }
+
+  .first-section {
+    .right-section {
+      @include background-image('~@/assets/img/img_bg_top_projetcs.jpg', no-repeat, right, cover, 430px);
+      @include padding(150px, 0px, 0px, 0px);
+      float: right;
+      width: 55%;
+    }
+
+    .text {
+      @include textAlign(center)
+    }
+
+    p {
+      @include margin(20px, 0px, 0px, 20px);
+      @include textAlign(justify);
+      direction: rtl;
+      line-height: 23px;
+
+    }
+  }
+
+
+  .second-section {
+    .left-section {
+      @include background-image('~@/assets/img/img_bg_top_projects_2.jpg', no-repeat, right, cover, 430px);
+      @include padding(150px, 0px, 0px, 0px);
+      float: left;
+      width: 55%;
+    }
+
+    .text {
+      @include textAlign(center)
+    }
+
+    p {
+      @include margin(20px, 0px, 0px, 20px);
+      line-height: 23px;
+      @include textAlign(justify);
+      direction: rtl;
+    }
+  }
+
+
+  .three-section {
+    div {
+      width: 100%;
+    }
+  }
+
+
+  .large-new-products ::after {
+    //content: "";
+    //width: 155px;
+    //height: 300px;
+    //position: absolute;
+    //right: 0;
+    //background: rgb(255,255,255);
+    //background: linear-gradient(90deg, rgba(255,255,255,0.14049369747899154) 0%, rgba(245,245,245,1) 100%, rgba(0,36,1,0) 100%, rgba(43,194,214,0.07886904761904767) 100%, rgba(59,30,227,1) 100%);
+    //z-index: 2;
+
+  }
+
+  .samim-blog {
+    @include padding(0px, 0px, 0px, 100px);
+    direction: rtl;
+  }
+
+  .right-align {
+    @include textAlign(right);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: flex-start;
+    align-items: flex-end;
+
+    img {
+      width: 100px;
+      margin-right: 12px;
+    }
+  }
+
+  .center-align {
+    img {
+      height: 100px;
+    }
+  }
+
+  .left-align {
+    @include textAlign(left);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-content: flex-start;
+    align-items: start;
+
+    img {
+      width: 100px;
+      margin-left: 12px;
+    }
+  }
+
+  .top-projects-small {
+    img {
+      width: 50px;
+
+    }
+
+    .first-section {
+      .top-section {
+        @include background-image('~@/assets/img/img_bg_top_projects_small.jpg', no-repeat, right, cover, 340px);
+      }
+
+      .bottom-section {
+        p {
+          @include margin(25px, 25px, 25px, 25px);
+          @include textAlign(justify);
+          direction: rtl;
+          @include font-style($color-font-small-text, 15px, 25px, normal)
+        }
+      }
+    }
+
+    .second-section {
+      .top-section {
+        @include background-image('~@/assets/img/img_bg_top_projects_small.jpg', no-repeat, right, cover, 340px);
+      }
+
+      .bottom-section {
+        p {
+          @include margin(25px, 25px, 25px, 25px);
+          @include textAlign(justify);
+          direction: rtl;
+          @include font-style($color-font-small-text, 15px, 25px, normal)
+        }
+      }
+    }
+
+  }
+
+  .customer-slider-1 {
+    @include background-image('~@/assets/img/customers/slider/1.jpg', no-repeat, right, cover, 310px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    img {
+      width: 80px;
+      height: 80px;
+      float: right;
+    }
+
+    h5 {
+      @include font-style($color-white, 18px, 30px, bold);
+      @include textAlign(right)
+    }
+
+    p {
+      @include font-style($color-white, 15px, 25px, normal);
+      @include textAlign(right);
+      @include textAlign(justify);
+      direction: rtl;
+    }
+  }
+
+  .customer-slider-2 {
+    @include background-image('~@/assets/img/customers/slider/2.jpg', no-repeat, right, cover, 310px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 80px;
+      height: 80px;
+      float: right;
+    }
+
+    h5 {
+      @include font-style($color-white, 18px, 30px, bold);
+      @include textAlign(right)
+    }
+
+    p {
+      @include font-style($color-white, 15px, 25px, normal);
+      @include textAlign(justify);
+      direction: rtl;
+    }
+  }
+
+  .container-body {
+    width: 80%;
+  }
+
+  .customer-slider-3 {
+    @include background-image('~@/assets/img/customers/slider/3.jpg', no-repeat, right, cover, 310px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 80px;
+      height: 80px;
+      float: right;
+    }
+
+    h5 {
+      @include font-style($color-white, 18px, 30px, bold);
+      @include textAlign(right)
+    }
+
+    p {
+      @include font-style($color-white, 15px, 25px, normal);
+      @include textAlign(justify);
+      direction: rtl;
+    }
+  }
+
+  .show-container {
+    display: block;
+  }
+
+  .hide-container {
+    display: none;
+  }
+
+  .container-customers {
+    height: 100px;
+  }
+
+  .section-fist-customers {
+    @include margin(0px, 0px, 0px, 50px)
+  }
+}

@@ -1,0 +1,17 @@
+@import "../colors";
+@import "../mixins";
+
+#item-small-customer {
+  @include textAlign(-webkit-center);
+  background: $color-bg-section-customer-small;
+  height:460px;
+  img {
+    width: 119px;
+  }
+
+  p {
+    @include font-style($color-font-section-customer-small, 14px, 22px, normal);
+    @include textAlign(justify);
+    direction: rtl;
+  }
+}

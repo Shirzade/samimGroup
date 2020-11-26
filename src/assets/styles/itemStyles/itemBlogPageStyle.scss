@@ -1,0 +1,93 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#item-blog-page {
+
+  * {
+    font-family: IRANSans;
+    direction: rtl;
+  }
+  @include margin(0px, 0px, 0px, 25px);
+  @include textAlign(right);
+  a{
+    text-decoration: none;
+    .container-card {
+      @include border-type(0px, 0px, 0px, 5px, $color-top-projects-section, solid);
+      cursor: pointer;
+      height: 450px;
+      &:hover{
+        background-color: $color-top-projects-section;
+      }
+      .card-body {
+        color: $color-blog-titles;
+        flex: 1 1 auto;
+        @include padding(1.25rem, 0px, 0px, 1.25rem);
+        .text-blog {
+          @include textAlign(justify);
+          @include padding(5px, 10px, 15px, 0px);
+        }   
+        .title-blog {
+          @include padding(0px, 10px, 10px, 0px);
+          @include font-style($color-black-2, 20px, 30px, 1000);
+        }
+        .container-data {
+          @include padding(0px, 10px, 10px, 0px);
+          position: absolute;
+          bottom: 25px;
+          width: inherit;
+          // @include margin(0px, 0px, 0px, 0px);
+          .container-date{
+            font-size: 9px;
+            text-align: right;
+            margin-right: -15px;
+            span {
+              font-size: 12px;
+            }
+          }
+          .container-more{
+            margin-left: -10px;
+            .more-link {
+              text-align: left;
+              color: $color-selected-li;
+              &:hover {
+                color: $color-dark-red-text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  
+
+  
+
+  // .container-calender {
+  //   width: 40px;
+  //   height: 40px;
+  //   @include border-raduis(30px, 30px, 30px, 30px);
+  //   background: $color-bg-calender-blog;
+  //   float: right;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+
+  
+
+  // .container-date-time {
+  //   @include padding(5px, 10px, 15px, 0px);
+  //   position: absolute;
+  //   bottom: 14px;
+  // }
+
+  // .container-read {
+  //   font-size: 9px;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   @include padding(0px, 0px, 10px, 0px)
+  // }
+}

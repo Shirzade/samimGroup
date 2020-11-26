@@ -1,0 +1,103 @@
+@import "variables";
+
+
+@mixin font-style($color,$size,$lineHeight,$weight) {
+  color: $color;
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+  font-family: IRANSans;
+  direction: rtl;
+}
+
+@mixin font-style-en($color,$size,$lineHeight,$weight) {
+  color: $color;
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+  font-family: Roboto;
+  direction: rtl;
+}
+
+@mixin font-style-en-without-di($color,$size,$lineHeight,$weight) {
+  color: $color;
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+  font-family: Roboto;
+}
+
+@mixin font-style-black-en($color,$size,$lineHeight,$weight) {
+  color: $color;
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+  font-family: Roboto-black;
+  direction: rtl;
+}
+
+@mixin font-style-without-di($color,$size,$lineHeight,$weight) {
+  color: $color;
+  font-size: $size;
+  line-height: $lineHeight;
+  font-weight: $weight;
+  font-family: IRANSans;
+}
+
+@mixin textAlign($ta) {
+  text-align: $ta;
+}
+
+@mixin margin($top,$right,$left,$bottom) {
+  margin: {
+    top: $top;
+    right: $right;
+    left: $left;
+    bottom: $bottom;
+  }
+}
+
+@mixin border($size,$type,$color,$radius) {
+  border-width: $size;
+  border-color: $color;
+  border-style: $type;
+  border-radius: $radius;
+}
+
+@mixin border-type($top,$right,$left,$bottom,$color,$type) {
+  border: {
+    top: $color $type $top;
+    right: $color $type $right;
+    left: $color $type $left;
+    bottom: $color $type $bottom;
+  }
+}
+
+@mixin border-raduis($topRight,$BottomRight,$TopLeft,$bottomLeft) {
+  border-top-left-radius: $TopLeft;
+  border-bottom-right-radius: $BottomRight;
+  border-bottom-left-radius: $bottomLeft;
+  border-top-right-radius: $topRight;
+
+}
+
+@mixin padding($top,$right,$left,$bottom) {
+  padding: {
+    top: $top;
+    right: $right;
+    left: $left;
+    bottom: $bottom;
+  }
+}
+
+@mixin background-image($url,$repeat:repeat,$position:auto auto, $size:auto,$height) {
+  background: {
+    image: url($url);
+    repeat: $repeat;
+    position: $position;
+    size: $size;
+  }
+  height: $height;
+
+}
+

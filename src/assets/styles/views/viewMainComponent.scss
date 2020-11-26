@@ -1,0 +1,11 @@
+@import "../mixins";
+@import "../colors";
+@import "../variables";
+
+#main-component {
+  direction: rtl;
+  * {
+    font-family: IRANSans;
+    direction: rtl;
+  }
+}

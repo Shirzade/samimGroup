@@ -1,0 +1,426 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#app-button {
+  * {
+    font-family: IRANSans;
+  }
+
+  a {
+    color: unset;
+    text-decoration: unset;
+  }
+
+  //all butttons
+
+  .all-buttons:hover {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  }
+
+  .all-buttons {
+    --color: #{$color-all-button};
+    --hover: #{adjust-hue($color-all-button, 45deg)};
+  }
+
+  .all-buttons {
+    color: var(--color);
+    transition: 0.25s;
+
+    &:hover {
+      border-color: var(--hover);
+      color: #fff;
+    }
+  }
+
+  .all-buttons {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    width: 290px;
+    height: 50px;
+    background: $color-white-level-0;
+    margin-bottom: 50px;
+    @include font-style($color-all-button, 22px, 20px, normal);
+    @include border(2px, solid, $color-all-button, 0px)
+  }
+
+  // small
+  .all-buttons-small:hover {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  }
+
+  .all-buttons-small {
+    --color: #{$color-all-button};
+    --hover: #{adjust-hue($color-all-button, 45deg)};
+  }
+
+  .all-buttons-small {
+    color: var(--color);
+    transition: 0.25s;
+
+    &:hover {
+      border-color: var(--hover);
+      color: #fff;
+    }
+  }
+
+  .all-buttons-small {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    width: 230px;
+    height: 52px;
+    background: $color-white-level-0;
+    @include font-style($color-all-button, 22px, 20px, normal);
+    @include border(2px, solid, $color-all-button, 0px)
+  }
+
+  //more button our solution
+  .more-button-our-solution:hover,
+  .more-button-our-solution:focus {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  }
+
+  .more-button-our-solution {
+    --color: #{$color-white};
+    --hover: #{adjust-hue($color-white, 45deg)};
+  }
+
+  .more-button-our-solution {
+    color: var(--color);
+    transition: 0.25s;
+
+    &:hover,
+    &:focus {
+      border-color: var(--hover);
+      color: $color-all-button;
+    }
+  }
+
+  .more-button-our-solution {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    width: 190px;
+    height: 35px;
+    background: $color-white-level-0;
+    @include border(2px, solid, $color-white, 0px)
+  }
+
+
+  // small size
+
+  .more-button-our-solution-small:hover,
+  .more-button-our-solution-small:focus {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  }
+
+  .more-button-our-solution-small {
+    --color: #{$color-white};
+    --hover: #{adjust-hue($color-white, 45deg)};
+  }
+
+  .more-button-our-solution-small {
+    color: var(--color);
+    transition: 0.25s;
+
+    &:hover,
+    &:focus {
+      border-color: var(--hover);
+      color: $color-all-button;
+    }
+  }
+
+  .more-button-our-solution-small {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    width: 130px;
+    height: 30px;
+    background: $color-white-level-0;
+    @include border(2px, solid, $color-white, 0px)
+  }
+
+  // products & Solutions download PDF button
+  .product-info-button:hover,
+  .product-info-button:focus,
+  .pdf-download-button:hover,
+  .pdf-download-button:focus {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  }
+
+  .product-info-button,
+  .pdf-download-button {
+    --color: #{$color-selected-li};
+    //--hover: #{adjust-hue($color-selected-li, 45deg)};
+  }
+
+  .product-info-button,
+  .pdf-download-button {
+    color: var(--color);
+    transition: 0.25s;
+
+    &:hover,
+    &:focus {
+      border-color: var(--hover);
+      color: $color-selected-li;
+    }
+  }
+
+  .product-info-button,
+  .pdf-download-button {
+    background: none;
+    font: inherit;
+    line-height: 1;
+    color: $color-selected-li;
+    @include font-style($color-selected-li, 18px, 18px, bold);
+    background: $color-white-level-0;
+    @include margin(15px, 0px, 0px, 0px);
+    @include border(2px, solid, $color-selected-li, 0px)
+  }
+
+  .pdf-download-button {
+    @include padding(10px, 20px, 20px, 10px);
+    @include margin(70px, 0px, 0px, 150px);
+    font-weight: normal;
+
+    .buttonIconStyle {
+      @include padding(0px, 45px, 15px, 0px);
+      font-size: 14px;
+    }
+  }
+
+  .product-info-button {
+    width: 250px;
+    height: 40px;
+  }
+
+
+  // top projects
+  .top-project-more-button:hover,
+  .top-project-more-button:focus {
+    background-color: white;
+    color: black;
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  }
+
+  .top-project-more-button {
+    // --color: #{$color-white};
+    // --hover: #{adjust-hue($color-white, 45deg)};
+  }
+
+  .top-project-more-button {
+    // color: var(--color);
+    transition: 0.25s;
+
+    &:hover,
+    &:focus {
+      // border-color: var(--hover);
+      // color: $color-all-button;
+    }
+  }
+
+  .top-project-more-button {
+    background-color: white;
+    // background: none;
+    // border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    width: 325px;
+    height: 44px;
+    // background: $color-white-level-0;
+    // @include font-style($color-white, 20px, 20px, normal);
+    @include font-style($color-black, 20px, 20px, normal);
+    // @include border(3px, solid, $color-white, 0px)
+  }
+
+  // small more button
+
+  .more-button-top-projects-small:hover,
+  .more-button-top-projects-small:focus {
+    // box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  }
+
+  .more-button-top-projects-small {
+    --color: #{$color-all-button};
+    --hover: #{adjust-hue($color-all-button, 45deg)};
+  }
+
+  .more-button-top-projects-small {
+    color: var(--color);
+    transition: 0.25s;
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05, 1.1);
+      -webkit-transform: scale(1.05, 1.1);
+      // border-color: var(--hover);
+      // color: $color-white;
+    }
+  }
+
+  .more-button-top-projects-small {
+    background: none;
+    // border: 2px solid;
+    font: inherit;
+    line-height: 1;
+    width: 263px;
+    height: 50px;
+    background: $color-white-level-0;
+    @include margin(0px, 0px, 0px, 20px);
+    @include font-style($color-all-button, 20px, 20px, normal);
+    @include border(1px, solid, $color-all-button, 0px)
+  }
+
+
+  .all-products-menu:hover,
+  .all-products-menu:focus {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  }
+
+  .all-products-menu {
+    --color: #{$color-white};
+    --hover: #{adjust-hue($color-all-button, 45deg)};
+  }
+
+  .all-products-menu {
+    color: var(--color);
+    transition: 0.25s;
+
+    &:hover,
+    &:focus {
+      border-color: var(--hover);
+      color: #fff;
+    }
+  }
+
+  .all-products-menu {
+    width: 100%;
+    height: 30px;
+    margin-top: 12px;
+    @include border(1px, solid, $color-gray-level-8, 0px);
+    background: $color-white-level-0;
+  }
+
+
+  .apply-button {
+    width: 260px;
+    height: 35px;
+    background: $color-selected-li;
+    color: $color-white;
+    @include margin(50px, 0px, 0px, 50px);
+    @include border(1px, solid, $color-selected-li, 0px);
+    @include textAlign(center)
+  }
+
+  //  login page button
+  //.login-page-button:hover,
+  //.login-page-button:focus {
+  //  box-shadow: inset 0 -3.25em 0 0 var(--hover);
+  //}
+  //
+  //.login-page-button {
+  //  --color: #{$color-selected-li};
+  //  --hover: #{adjust-hue($color-selected-li, 0deg)};
+  //}
+  //
+  //.login-page-button {
+  //  background-color: $color-selected-li;
+  //
+  //}
+
+  .login-page-button {
+    width: 100%;
+    height: 35px;
+    background: $color-white-level-0;
+    color: $color-white;
+    @include margin(20px, 0px, 0px, 0px);
+    background-color: $color-selected-li;
+    @include border(3px, solid, $color-selected-li, 0px);
+  }
+
+  .change-language-button {
+    width: 105px;
+    height: 30px;
+    @include border(1px, solid, $color-dark-gray, 0px);
+    @include padding(2px, 10px, 10px, 2px);
+    background: $color-dark-gray;
+  }
+
+  .login-button {
+    width: 84px;
+    height: 28px;
+    @include border(1px, solid, $color-dark-gray, 0px);
+    background: $color-dark-gray;
+
+    span {
+      vertical-align: super;
+    }
+  }
+
+  .login-button-username {
+    height: 23px;
+    @include padding(0px, 10px, 10px, 2px);
+    @include border(1px, solid, $color-dark-gray, 0px);
+    background: $color-dark-gray;
+  }
+
+  .more-button, .more-button-blog-home {
+    @include font-style($color-red-text, 15px, 20px, normal);
+    @include border(1px, solid, $color-white, 0px);
+    @include margin(30px, 0px, 0px, 0px);
+    background: $color-white;
+  }
+
+  .more-button:hover {
+    @include font-style($color-dark-red-text, 15px, 20px, normal);
+  }
+
+
+  .item-small-button {
+    width: 200px;
+    height: 36px;
+    background: $color-selected-li;
+    @include border(1px, solid, $color-selected-li, 5px)
+  }
+
+  .forget-password {
+    background: $color-white-level-0;
+    @include font-style($color-forget-password, 10px, 8px, normal);
+    @include margin(10px, 5px, 0px, 0px);
+    @include border(0px, solid, $color-white-level-0, 0px)
+  }
+}
+
+#item-blog-post-download-btn, #item-blog-post-source-btn {
+  position: absolute;
+  background-color: $color-gray-level-f;
+  border-radius: 30px;
+  float: right;
+  padding: 0px 20px;
+  margin: 20px 18px;
+  font-size: 16px;
+  cursor: pointer;
+
+  .buttonIconStyle {
+    padding-right: 15px;
+  }
+
+  .download-link {
+    color: $color-red-blog-link;
+  }
+
+  .source-link {
+    color: $color-blue-blog-posts;
+  }
+}
+
+#item-blog-post-source-btn {
+  margin-top: 100px;
+  margin-bottom: -150px;
+}

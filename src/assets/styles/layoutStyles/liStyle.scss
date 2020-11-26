@@ -1,0 +1,115 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+
+#app-li {
+    * {
+        // font-family: IRANSans;
+        @include textAlign(right);
+        direction: rtl;
+        text-align: justify;
+        .listIconStyle{
+            @include padding(0px, 0px, 15px, 0px);
+        }
+
+    }
+    .font-roboto{
+        font-family: Roboto;
+    }
+    .imam-features{
+        @include margin(0px, 0px, 0px, 40px);
+        .listIconStyle{
+            @include font-style($color-black-2, 13px, 20px, normal);
+        }
+        .liTitleStyle{
+            @include font-style($color-black-2, 18px, 20px, normal);
+        }
+        .liTextStyle{
+            @include font-style($color-gray, 18px, 40px, normal);
+            @include margin(10px, 33px, 0px, 40px);
+        }
+    }
+    .smartcastmanager-features, .ip-gateway-products{
+        @include margin(20px, -22px, 5px, 0px);
+        .listIconStyle{
+            @include font-style($color-black-2, 13px, 20px, normal);
+
+        }
+        .liTextStyle{
+            @include font-style($color-black-2, 18px, 20px, normal);
+        }
+    }
+    .smartcastmanager-security{
+        @include margin(20px, 30px, 5px, 0px);
+        .listIconStyle{
+            @include font-style($color-black-2, 13px, 20px, normal);
+        }
+        .liTextStyle{
+            @include font-style($color-black-2, 18px, 20px, normal);
+        }
+    }
+
+    .ipgateway-features{
+        // @include margin(0px, 0px, 0px, 40px);
+        .listIconStyle{
+            @include font-style($color-selected-li, 25px, 20px, normal);
+        }
+        .liTitleStyle{
+            @include font-style($color-black-2, 18px, 20px, normal);
+        }
+        .liTextStyle{
+            @include font-style($color-gray, 18px, 40px, normal);
+            @include margin(0px, 33px, 0px, 40px);
+        }
+    }
+
+    .bitcaster-features{
+        @include margin(0px, 0px, 0px, 40px);
+        .listIconStyle{
+            @include font-style($color-black-2, 13px, 20px, normal);
+        }
+        .liTitleStyle{
+            @include font-style($color-black-2, 18px, 20px, normal);
+        }
+        .liTextStyle{
+            @include font-style($color-gray, 18px, 40px, normal);
+            @include margin(10px, 33px, 0px, 40px);
+        }
+    }
+    .bitcaster-features-li{
+        @include margin(0px, 0px, 0px, 20px);
+        .listIconStyle{
+            @include font-style($color-black-2, 13px, 20px, normal);
+        }
+        .liTextStyle{
+            @include font-style($color-black-2, 18px, 20px, normal);
+            @include margin(0px, 33px, 0px, 40px);
+        }
+    }
+    .iptv-features{
+        padding-right: 40px;
+        .listIconStyle{
+            @include font-style($color-selected-li, 20px, 20px, normal);
+            margin-right: -66px;
+        }
+        // .liTitleStyle{
+        //     @include font-style($color-black-2, 18px, 20px, normal);
+        // }
+        .liTextStyle{
+            @include font-style($color-gray, 18px, 40px, normal);
+            @include margin(0px, 25px, 0px, 40px);
+        }
+    }
+
+    .top-projects-bazar-mohtava-links {
+        @include margin(0px,35px, 0px, 0px);
+        @include font-style($color-selected-li, 19px, 20px, normal)
+    }
+
+    a {
+        @include font-style($color-selected-li, 19px, 36px, normal);
+        text-decoration: none;
+
+    }
+}

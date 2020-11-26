@@ -1,0 +1,47 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#tab-top-project-page {
+  background: $color-white;
+  direction: ltr;
+  @include margin(0,0,0,90px);
+  // .container {
+  //   background: $color-white;
+  // }
+
+  .container-title-tabs {
+    padding: 2px;
+    background: $color-white;
+    height: 50px;
+
+    .not-active {
+      background: $color-gray-level-d;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      @include font-style($color-gray, 17px, 16px, normal)
+    }
+
+    .active {
+      background: $color-white;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      @include font-style($color-selected-li, 18px, 16px, normal)
+    }
+  }
+
+
+  // .content-tabs-products-page {
+  //   height: 800px;
+
+
+
+  // }
+
+}

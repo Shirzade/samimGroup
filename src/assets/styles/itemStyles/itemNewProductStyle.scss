@@ -1,0 +1,58 @@
+@import "../colors";
+@import "../mixins";
+
+#item-new-product {
+  @include textAlign(right);
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+  @include padding(25px, 0px, 10px, 0px);
+  @include textAlign(left);
+
+  h3 {
+    @include font-style($color-black, 17px, 20px, bold);
+    font-family: Roboto;
+    @include padding(0px, 35px, 0px, 0px);
+    @include textAlign(right)
+  }
+
+  h4 {
+    @include font-style($color-red-text, 14px, 22px, normal);
+    //font-family: Roboto;
+    @include padding(0px, 35px, 0px, 0px);
+    @include textAlign(right)
+  }
+
+  img {
+    width: 222px;
+    height: 140px;
+  }
+
+}
+
+
+#item-small-new-product {
+  width: 200px;
+  @include textAlign(right);
+
+  h3 {
+    @include font-style($color-black, 19px, 20px, bold)
+  }
+
+  h4 {
+    @include font-style($color-sub-title, 14px, 15px, bold)
+  }
+
+  p {
+    direction: rtl;
+  }
+
+  @include margin(10px, 10px, 10px, 17px);
+  @include padding(5px, 5px, 5px, 5px);
+  height: 240px;
+  -webkit-box-shadow: 0px 0px 26px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 26px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 26px -10px rgba(0, 0, 0, 0.75);
+}
+
+

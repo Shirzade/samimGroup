@@ -1,0 +1,17 @@
+@import "../colors";
+@import "../mixins";
+
+#app-breadcrumb-page {
+    
+    direction: rtl;
+    text-align: right;
+    @include margin(30px, 0px, 0px, 20px);
+    .container-item-bread-crumb {
+        cursor: pointer;
+    }
+    span {
+        @include padding(0px,3px,3px,0px);
+        cursor: pointer;
+        @include font-style($color-black, 13px, 19px, normal)
+    }
+}

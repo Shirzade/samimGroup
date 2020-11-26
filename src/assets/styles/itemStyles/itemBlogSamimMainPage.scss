@@ -1,0 +1,29 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#item-blog-samim {
+  cursor: pointer;
+  @include margin(0px, 0px, 0px, 30px);
+  * {
+    font-family: IRANSans;
+  }
+
+  * {
+    @include textAlign(right)
+  }
+  a{
+    color:inherit;
+    text-decoration: none;
+    .card-body{
+      // padding-right: 0;
+    }
+    .card-title{
+      line-height: 1.8;
+    }
+    .card-text{
+      margin-top: 20px;
+      color: gray!important;
+    }
+  }
+}

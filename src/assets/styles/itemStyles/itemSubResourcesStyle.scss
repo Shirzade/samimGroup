@@ -1,0 +1,53 @@
+@import "../colors";
+@import "../mixins";
+@import "../variables";
+
+#item-sub-resources {
+    @include font-style(gray, 15px , 30px , 200);
+    @include padding(5px, 15px, 15px, 15px);
+    @include border(1px, solid, lightgray, 1);
+    @include margin(10px, 0px, 0px, 10px);
+    .card-body{
+        border-bottom: #ccc solid 1px;
+    
+        .img-container{
+            display: flex;
+            align-self: center;
+            .card-img{
+                // height: max-content;
+                width: auto;
+                vertical-align: middle;
+                
+            }
+        }
+        .divider{
+            @include padding(0, 5px, 5px, 0);
+            line-height: 20px;
+        }
+        .size{
+            direction: ltr;
+            @include padding(0, 5px, 5px, 0)
+        }
+        // .icon-image{
+        //     display: flex;
+        //     align-self: center;
+        // }
+        // .card-img{
+        //     width: auto;
+        // }
+        .title{
+            .card-title{
+                @include font-style-en(gray, 15px , 30px , 200);
+                text-align: right;
+            }
+            a{
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        .detailes{
+            text-align: right;
+        }
+    }
+}
